@@ -1,0 +1,22 @@
+{
+	"manifest_version": 2,
+
+	"name": "When Kevin President",
+	"version": "1.0",
+	"description": "Why waste time read lot word when few word do trick?",
+	"browser_action": {
+		"default_icon": "kevin.png",
+		"default_popup": "popup.html"
+	},
+
+	"content_scripts": [
+		{
+			"matches": [
+				"<all_urls>"
+			],
+			"js": ["script.js"],
+			"run_at": "document_end"
+		}
+	]
+
+}
